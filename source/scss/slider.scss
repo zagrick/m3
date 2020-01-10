@@ -1,0 +1,70 @@
+#slider{
+	overflow: hidden;
+	display: flex;
+	margin-top: -76px;
+}
+.slider{
+	position: relative; 
+	width: 100%;
+	overflow: hidden; 
+	z-index: 1;
+	margin: 0 auto;
+	text-align: center;
+}
+#pics{
+	position: relative; 
+	display: inline-flex; 
+	width: 100%;
+	transition: all ease 1s;
+	left: 0; 
+	padding: 0;
+	list-style-type: none;
+}
+.img1{
+	content: url('/img/main.png');
+}
+.img2{
+	content: url('/img/main2.png');
+}
+.pic1, .pic2{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.body{
+	width: 100%;
+	position: absolute;
+	top: 25%;
+}
+.spin, .spin2{
+	width: 72px;
+	height: 16px;
+	border-radius: 8px;
+	border: 1px solid #5489c3;
+	margin: 160px auto;
+}
+.spin-active,
+.spin-disable{
+	width: 16px;
+	height: 1px;
+	border-radius: 1px;
+}
+.spin .spin-active,
+.spin2 .spin-active {
+	background-color: #fafbfd;
+	
+}
+.spin .spin-disable,
+.spin2 .spin-disable{
+	background-color: #5489c3;
+}
+.spin .spin-active,
+.spin2 .spin-disable{
+	margin: 7px 0 0 16px;
+}
+.spin .spin-disable,
+.spin2 .spin-active{
+	margin: -1px 0 0 40px;
+}

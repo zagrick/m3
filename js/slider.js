@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",function(){var e=document.getElementById("pics"),t=$("#pics").width(),n=0;$(".img1, .img2").css("width",t);var i=setInterval(function(){(n-=t)<-t&&(n=0),e.style.left=n+"px"},5e3);e.onmouseover=function(){clearInterval(i)}});
